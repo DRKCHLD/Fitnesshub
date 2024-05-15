@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+nav {
+    position: fixed;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    font-size: 1.7rem;
+    background: white;
+    
+}
+
+.nav-container {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+}
+
+
+
+
+nav ul {
+   
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    align-self: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+border-top: 2px solid rgb(255,121,23);
+border-bottom: 2px solid rgb(104,219,255) ;
+
+}
+
+ button {
+    background: rgb(255,121,23);
+   width: 9.875rem;
+   height: 3.25rem;
+   border: none;
+   border-radius: 30px;
+   transition: 0.5s ease;
+ 
+}
+ button a {
+    text-decoration: none;
+    color: white;
+}
+
+ button:hover {
+    background: rgb(104,219,255);
+  transition: 0.5s ease;
+   
+}
+
+.hero-section {
+    position: relative;
+    top: 9.5rem;
+    padding: 2%;
+    
+    height: 95vh;
+    background-image: url(images/Rectangle\ 2\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+   /* gap: 35%; */
+    align-items: center;
+}
+
+
+
+.hero-text-container {
+    width: 50%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+#dummy-text {
+    width: 80%;
+    
+}
+
+.hero-text-container h1 {
+    font-size: 4rem;
+    
+}
+
+.hero-text-container h1 span {
+    color: rgb(255,121,23);
+}
+
+.hero-image-container {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.user-container img {
+    width:16.175rem;
+    max-height: 2.5rem;
+}
+
+.user-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.user-container p {
+    font-weight: 700;
+}
+
+.user-container p span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin-top: 8rem;
+    font-size: 2rem;
+}
+
+.download-text-container {
+    width: 35%;
+}
+
+.download-text-container h1 {
+    margin-bottom: 2rem;
+}
+
+.download span {
+    color: rgb(255,121,23);
+}
+
+.active-user-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3.5rem;
+}
+
+.active-user-container h4 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    
+}
+
+#train {
+    padding-left: 5.2rem;
+    border-left: 1px solid black;
+}
+
+.active-user-container span {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.download-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18rem;
+}
+
+.operating-system {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}
+.operating-system button {
+    width: 13.875rem;
+}
+
+.operating-system span {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: lighter;
+}
+
+.workout-container {
+    background-color: black;
+    width: 99.9%;
+}
+
+.workout {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 4rem;
+    background: rgb(104,219,255);
+    color: white;
+    font-weight: bolder;
+    padding: 1rem 0 1rem 0;
+    transform: rotate(-1.8deg);
+    overflow: hidden;
+    width: 100%;
+}
+
+.gym-benefits {
+    padding: 2%;
+    margin-top: 2.5rem;
+}
+
+.benefit-grid-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.benefit-grid {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.benefit-grid h1 {
+    color: rgb(255,121,23);
+    font-weight: bolder;
+}
+
+.benefit-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-subhead {
+    width: 40%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.benefit-subhead p {
+    border-left: 2px solid rgb(127,127,127);
+    padding: 1.8rem;
+}
+
+.benefit-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    
+}
+
+.benefit-text-container h1 {
+    font-weight: 500;
+}
+
+.benefit-text-container span {
+    color: rgb(255,121,23);
+}
+
+.trainer-container {
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 1.5rem;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+
+
+.trainer-container span {
+    color: rgb(255,121,23);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 17rem;
+    font-size: 5rem;
+}
+
+.contact h1 {
+    font-weight: bolder;
+    color: rgb(255,121,23);
+}
+
+.contact p {
+    width: 65%;
+    font-size: 2.4rem;
+}
+
+.contact button {
+    width: 15.875rem;
+    height: 4.575rem;
+}
+
+.app-demo {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-img-container img {
+width: 100%;
+}
+
+.workout-activity {
+    padding: 2%;
+}
+
+.search-filter {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4.5px solid rgb(255,121,23);
+    border-bottom: none;
+    padding: 2%;
+    margin-top: 3rem;
+}
+
+.category-details {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+
+.category-details h3 {
+    font-weight: 400;
+}
+
+.cart-grid {
+    background: rgb(249,250,251);
+    padding-bottom: 1rem;
+    border-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom: 1px solid rgb(221, 220, 220);
+    
+}
+
+.cart-img-container img {
+    width: 100%;
+}
+
+.cart-container {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20rem;
+    row-gap: 3rem;
+}
+.cart-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    gap: 1rem;
+}
+
+.extra-details {
+    margin-top: 1.5rem;
+    margin-left: 4%;
+    margin-right: 4%;
+   
+}
+
+.cart-name {
+    padding: 2%;
+}
+
+.cart-name h1 {
+    color: rgb(255,121,23);
+}
+
+.workout-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.time, .activity, .profile {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.gym-instructor {
+    display: flex;
+    justify-content: space-between;
+    margin: 6%;
+    border-top: 1px solid rgb(127,127,127);
+    padding-top: 4rem;
+    margin-top: 5rem;
+}
+
+.testimonials {
+    padding: 2%;
+    margin-top: 2rem;
+}
+.profile-img-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+
+.testimony-identity {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+.testimony-identity p {
+    width: 50%;
+    align-self: center;
+    font-size: 1.9rem;
+    color: rgb(127,127,127);
+}
+
+.testimony-identity h1 {
+    font-weight: 700;
+}
+
+.testimony-identity h2 {
+    font-size: 1.2rem;
+    color: rgb(127,127,127);
+}
+
+.five-star {
+    margin-top: 1rem;
+}
+
+.expert {
+    padding: 2%;
+}
+
+.trainer-cart-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.trainer-cart-container span {
+    color: rgb(127,127,127);
+    font-size: 1.3rem;
+}
+
+.trainer-cart-container  .cart-name {
+    color: black;
+    padding: 2rem;
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.trainer-cart-container .cart-name h1 {
+   color: black;
+}
+
+.trainer-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainer-header-container button {
+    width: 11.875rem;
+}
+
+.blog {
+    padding: 2%;
+}
+
+#essentials {
+    width: 70%;
+    margin-left: 1.5rem;
+}
+
+.trainer-cart-container .activity {
+    width: 50%;
+}
+
+.trainer-cart-container .workout-time {
+    padding: 2%;
+    margin-left: 0.6rem;
+    margin-right: 1rem;
+}
+
+.fitness-potential-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fitness-potential {
+    background: rgb(255,121,23);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    text-align: center;
+    border-radius: 19px;
+    font-size: 1.3rem;
+    padding: 3rem 5rem 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.fitness-potential h1 {
+    color: white;
+}
+
+.fitness-potential p {
+    width: 70%;
+    align-self: center;
+    color: white;
+}
+
+.fitness-potential h2 {
+    font-size:3rem;
+    font-weight: 600;
+}
+
+
+.footer {
+    padding: 2%;
+    padding-top: 15rem;
+    background: rgb(43,43,43);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 20.33%;
+}
+
+.lists ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    
+}
+
+.lists li a {
+    text-decoration: none;
+    color: white;
+}
+
+.lists {
+    display: flex;
+    gap: 20rem;
+}
+
+#list-header a {
+    color: rgb(255,121,23);
+    font-weight: 600;
+}
+
+.newsletter {
+    background: rgb(36,36,36);
+    height:4.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    border-radius: 9px;
+    border: none;
+}
+
+.newsletter button {
+    border-radius: 7px;
+}
+input {
+    background: none;
+    border: none;
+    color: white;
+
+}
+
+input[type="text"]::placeholder {
+    color: white;
+}
+
+input[type="text"]:active::placeholder {
+    color: white;
+}
+
+.social-media-logo {
+    display: flex;
+    gap: 3rem;
+}
+
+
+@media (max-width:1134px) {
+    .cart-container {
+        column-gap:4rem;
+}
+
+.download-text-container {
+    width: 45%;
+}
+
+.blog .cart-grid {
+    width: 30%;
+}
+
+}
+
+/* FOR TABLET */
+
+@media (max-width:820px) {
+    html {
+        font-size: 50%
+    }
+
+    .hero-text-container {
+        font-size: 1.7rem;
+    }
+
+    .social-media-logo {
+        gap: 1rem;
+    }
+
+    .blog .cart-grid, .expert .cart-grid {
+        width: 30%;
+    }
+
+     button  {
+        font-size: 1.4rem;
+    }
+
+    .contact p{
+        width: 80%;
+        font-size: 2rem;
+    }
+}
+
+
+/* FOR MOBILE */
+
+@media (max-width:500px) {
+
+    html {
+        font-size: 37%;
+    }
+
+    nav {
+        top: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+    .hero-section {
+        flex-direction: column-reverse;
+        gap: 5rem;
+        margin-top: 0rem;
+    }
+
+    .hero-image-container {
+        width: 80%;
+        height: auto;
+    }
+
+    .hero-text-container {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    #dummy-text {
+        width: 100%;
+    }
+
+    .download {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .download-text-container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .app-store-logo {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .user-container {
+        margin-bottom: 2rem;
+    }
+
+    .active-user-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .benefit-grid-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .benefit-grid {
+        width: 90%;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgb(127,127,127);
+    }
+
+    .cart-container {
+        grid-template-columns:repeat(1,100%);
+        justify-items: center;
+        align-items: center;
+      
+    }
+
+    .cart-grid {
+        font-size: 1.5rem;
+    }
+
+    .search-filter {
+        font-size: 1.5rem;
+    }
+
+    .testimony-identity p {
+        width: 90%;
+    }
+
+    .testimony-identity {
+        margin-bottom: 2rem;
+    }
+
+    .expert {
+        margin-top: 5rem;
+    }
+
+    .expert .trainer-cart-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .expert .cart-grid {
+        width: 80%;
+        
+    }
+    
+    .expert .cart-grid h1 {
+        font-size: 2.5rem;
+    }
+    
+    .expert .cart-grid span {
+        font-size: 1.7rem;
+    }
+
+    .blog {
+        margin-top: 7rem;
+    }
+
+    .blog .trainer-cart-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .blog .cart-grid {
+        width: 80%;
+    }
+
+    .fitness-potential-container {
+       width: 100%;
+    }
+
+    .fitness-potential .btn-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .fitness-potential p {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-footer-content {
+        width: 80%;
+        gap: 5rem;
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .social-media-logo {
+        gap: 5rem;
+    }
+
+    .lists ul {
+        font-size: 2.5rem;
+    }
+
+    .lists {
+        margin-bottom: 5rem;
+    }
+
+    .newsletter {
+        height:5.5rem;
+        width: 80%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+    }
+
+    .newsletter button {
+        float: right;
+        height: 3.5rem;
+        width: 11.5rem;
+    }
+}
+
